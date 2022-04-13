@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var dataProvider = DataProvider()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            TabView {
+                /// View de todos os vídeos
+                /// View dos vídeos favoritados
+            }
+        }
     }
 }
 
